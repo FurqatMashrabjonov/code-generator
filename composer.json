@@ -1,0 +1,28 @@
+{
+    "name": "furqat/code-generator",
+    "description": "Code generator",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+
+    "authors": [
+        {
+            "name": "FurqatMashrabjonov",
+            "email": "php_lesson@mail.ru",
+            "homepage": "https://github.com/FurqatMashrabjonov"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Furqat\\CodeGenerator\\CodeGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "Furqat\\CodeGenerator\\CodeGenerator"
+            }
+        }
+    },
+    "require": {
+        "openai-php/client": "dev-main"
+    }
+}
